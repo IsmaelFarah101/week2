@@ -7,6 +7,12 @@ def camelCase(sentence):
 
     print(newsentence)
 
+def instructions():
+    message = 'Here are some instructions'
+    stars = '*' * 20
+    instruction = 'Enter a a wild sentence into the input'
+    print(f'\n{stars}\n{message}\n{stars}')
+
 def banner():
     message = 'Camel Case Generator'
     slashes = '/' * 20
@@ -14,6 +20,7 @@ def banner():
 
 def main():
     banner()
+    instructions()
     userInput = input('Enter a clunk sentence: ')
     print(camelCase(userInput))
 
